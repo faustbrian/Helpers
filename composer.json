@@ -1,9 +1,28 @@
 {
-    "name": "draperstudio/support",
+    "name": "draperstudio/laravel-support",
+    "type": "library",
     "description": "A collection of helper functions",
+    "keywords": [
+        "draperstudio",
+        "laravel-support"
+    ],
+    "homepage": "https://github.com/DraperStudio/laravel-support",
+    "license": "MIT",
+    "authors": [{
+        "name": "DraperStudio",
+        "email": "hello@draperstudio.tech",
+        "homepage": "http://draperstudio.tech",
+        "role": "Developer"
+    }],
     "require": {
-        "php": ">=5.5.9",
-        "illuminate/support": "5.1.*|5.2.*"
+        "php": "^5.5.9 || ^7.0",
+        "illuminate/support": "5.1.* || 5.2.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.4",
+        "phpunit/phpunit": "^4.8 || ^5.0",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
     },
     "autoload": {
         "files": [
@@ -31,5 +50,23 @@
             "src/TypeConversion.php",
             "src/Uuid.php"
         ]
-    }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DraperStudio\\Tests\\Support\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

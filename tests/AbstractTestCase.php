@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-if (!function_exists('guzzle')) {
-    /**
-     * @param array $config
-     *
-     * @return \GuzzleHttp\Client
-     */
-    function guzzle(array $config = [])
-    {
-        return new GuzzleHttp\Client($config);
-    }
+namespace DraperStudio\Tests\Support;
+
+/**
+ * This is the abstract test case class.
+ *
+ * @author DraperStudio <hello@draperstudio.tech>
+ */
+abstract class AbstractTestCase extends \PHPUnit_Framework_TestCase
+{
+    //
 }
