@@ -1,6 +1,15 @@
 <?php
 
-if (!function_exists('cache')) {
+/*
+ * This file is part of Helpers.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+if (! function_exists('cache')) {
     function cache($key = null, $default = null)
     {
         if (is_null($key)) {
@@ -15,7 +24,7 @@ if (!function_exists('cache')) {
     }
 }
 
-if (!function_exists('filesystem')) {
+if (! function_exists('filesystem')) {
     function filesystem()
     {
         return app('files');
