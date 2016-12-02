@@ -9,21 +9,21 @@
  * file that was distributed with this source code.
  */
 
-if (! function_exists('auth')) {
+if (!function_exists('auth')) {
     function auth()
     {
         return app('auth');
     }
 }
 
-if (! function_exists('current_user')) {
+if (!function_exists('current_user')) {
     function current_user()
     {
         return app('auth')->user();
     }
 }
 
-if (! function_exists('socialite')) {
+if (!function_exists('socialite')) {
     function socialite($provider)
     {
         return app('Laravel\Socialite\Contracts\Factory')->with($provider);

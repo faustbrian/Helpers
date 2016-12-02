@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-if (! function_exists('dbg')) {
+if (!function_exists('dbg')) {
     function dbg($data)
     {
         dump($data);
