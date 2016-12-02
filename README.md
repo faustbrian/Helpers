@@ -11,8 +11,7 @@ $ composer require faustbrian/helpers
 ## Usage
 
 ``` php
-$skeleton = new BrianFaust\Skeleton();
-echo $skeleton->echoPhrase('Hello, BrianFaust!');
+...
 ```
 
 ## Security
