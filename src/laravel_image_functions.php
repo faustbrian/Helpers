@@ -12,23 +12,11 @@
 if (!function_exists('extract_colours')) {
     function extract_colours($file, $amount = 6, $type = 'png')
     {
-        $client = app('BrianFaust\ColorExtractor\Client');
+        $palette = League\ColorExtractor\Palette::fromFilename($file);
 
-        switch ($type) {
-            case 'png':
-                $image = $client->loadPng($file);
-            break;
+        $extractor = new League\ColorExtractor\ColorExtractor($palette);
 
-            case 'jpeg':
-                $image = $client->loadJpeg($file);
-            break;
-
-            default:
-                return;
-            break;
-        }
-
-        return $image->extract($amount);
+        return $extractor->extract($amount);
     }
 }
 
