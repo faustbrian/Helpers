@@ -10,7 +10,7 @@
  */
 
 if (!function_exists('dbg')) {
-    function dbg($data): void
+    function dbg($data)
     {
         dump($data);
 

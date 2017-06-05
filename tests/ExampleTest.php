@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Helpers.
  *
@@ -16,7 +13,7 @@ namespace BrianFaust\Tests\Support;
 
 class ExampleTest extends AbstractTestCase
 {
-    public function testTrueIsTrue(): void
+    public function testTrueIsTrue()
     {
         $this->assertTrue(true);
     }

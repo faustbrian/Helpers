@@ -514,49 +514,49 @@ if (!function_exists('stringy_html_decode')) {
 }
 
 if (!function_exists('camel_case')) {
-    function camel_case(string $value) : string
+    function camel_case(string $value): string
     {
         return s($value)->camelize();
     }
 }
 
 if (!function_exists('dash_case')) {
-    function dash_case(string $value) : string
+    function dash_case(string $value): string
     {
         return s($value)->dasherize();
     }
 }
 
 if (!function_exists('human_case')) {
-    function human_case(string $value) : string
+    function human_case(string $value): string
     {
         return s($value)->humanize();
     }
 }
 
 if (!function_exists('swap_case')) {
-    function swap_case(string $value) : string
+    function swap_case(string $value): string
     {
         return s($value)->swapCase();
     }
 }
 
 if (!function_exists('title_case')) {
-    function title_case(string $value) : string
+    function title_case(string $value): string
     {
         return s($value)->titleize();
     }
 }
 
 if (!function_exists('snake_case')) {
-    function snake_case(string $value) : string
+    function snake_case(string $value): string
     {
         return s($value)->underscored();
     }
 }
 
 if (!function_exists('space_case')) {
-    function space_case(string $value) : string
+    function space_case(string $value): string
     {
         return human_case($value);
     }
