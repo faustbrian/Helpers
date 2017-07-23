@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-if (!function_exists('mailer')) {
+if (! function_exists('mailer')) {
     function mailer()
     {
         return app('mailer');

@@ -10,32 +10,32 @@
  */
 
 use Hashids\Hashids;
-use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Collection;
 use Stringy\StaticStringy;
+use Illuminate\Support\Collection;
+use Illuminate\Pagination\LengthAwarePaginator;
 
-if (!function_exists('carbon')) {
+if (! function_exists('carbon')) {
     function carbon($dateTime = null)
     {
         return new Carbon\Carbon($dateTime);
     }
 }
 
-if (!function_exists('stringy')) {
+if (! function_exists('stringy')) {
     function stringy()
     {
         return app('Stringy\StaticStringy');
     }
 }
 
-if (!function_exists('faker')) {
+if (! function_exists('faker')) {
     function faker()
     {
         return \Faker\Factory::create();
     }
 }
 
-if (!function_exists('generate_hashid')) {
+if (! function_exists('generate_hashid')) {
     function generate_hashid($salt = null)
     {
         if (empty($salt)) {
@@ -54,7 +54,7 @@ if (!function_exists('generate_hashid')) {
     }
 }
 
-if (!function_exists('unique_random_numbers_within_range')) {
+if (! function_exists('unique_random_numbers_within_range')) {
     function unique_random_numbers_within_range($min, $max, $quantity)
     {
         $numbers = range($min, $max);
@@ -65,14 +65,14 @@ if (!function_exists('unique_random_numbers_within_range')) {
     }
 }
 
-if (!function_exists('load_xml_string')) {
+if (! function_exists('load_xml_string')) {
     function load_xml_string($string)
     {
         return simplexml_load_string($string, 'SimpleXMLElement', LIBXML_NOCDATA);
     }
 }
 
-if (!function_exists('length_aware_paginator')) {
+if (! function_exists('length_aware_paginator')) {
     function length_aware_paginator($items, $perPage, $currentPage = null, array $options = [])
     {
         $currentPage = $currentPage ?: LengthAwarePaginator::resolveCurrentPage();

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-if (!function_exists('cache')) {
+if (! function_exists('cache')) {
     function cache($key = null, $default = null)
     {
         if (is_null($key)) {
@@ -24,7 +24,7 @@ if (!function_exists('cache')) {
     }
 }
 
-if (!function_exists('filesystem')) {
+if (! function_exists('filesystem')) {
     function filesystem()
     {
         return app('files');
