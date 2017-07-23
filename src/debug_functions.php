@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-if (!function_exists('dbg')) {
+if (! function_exists('dbg')) {
     function dbg($data)
     {
         dump($data);
@@ -18,10 +18,10 @@ if (!function_exists('dbg')) {
     }
 }
 
-if (!function_exists('instance_of')) {
+if (! function_exists('instance_of')) {
     function instance_of($class, array $types): bool
     {
-        if (!is_object($class)) {
+        if (! is_object($class)) {
             return false;
         }
 
