@@ -11,14 +11,14 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-if (! function_exists('crypto')) {
+if (!function_exists('crypto')) {
     function crypto()
     {
         return app('encrypter');
     }
 }
 
-if (! function_exists('hasher')) {
+if (!function_exists('hasher')) {
     function hasher()
     {
         return app('hash');

@@ -11,21 +11,21 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-if (! function_exists('events')) {
+if (!function_exists('events')) {
     function events()
     {
         return app('events');
     }
 }
 
-if (! function_exists('commands')) {
+if (!function_exists('commands')) {
     function commands()
     {
         return app('Illuminate\Bus\Dispatcher');
     }
 }
 
-if (! function_exists('queue')) {
+if (!function_exists('queue')) {
     function queue()
     {
         return app('Illuminate\Queue\QueueManager');

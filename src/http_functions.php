@@ -11,7 +11,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-if (! function_exists('guzzle')) {
+if (!function_exists('guzzle')) {
     function guzzle(array $config = [])
     {
         return new GuzzleHttp\Client($config);
