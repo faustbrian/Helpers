@@ -11,12 +11,12 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-if (! function_exists('artisan')) {
+if (!function_exists('artisan')) {
     function artisan($command = null, array $parameters = [])
     {
         $artisan = app('Illuminate\Contracts\Console\Kernel');
 
-        if (! empty($command)) {
+        if (!empty($command)) {
             return $artisan->call($command, $parameters);
         }
 
